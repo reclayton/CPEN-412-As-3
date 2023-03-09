@@ -16,14 +16,14 @@ int main(int argc, char *argv[])
   FILE *DestFilePtr;
 
     
-  if((SourceFilePtr =  fopen("C:\\Users\\rclay\\Desktop\\CPEN_412\\CPEN-412-As-2\\M68kdebugmonitor.hex", "r")) == NULL)	{
+  if((SourceFilePtr =  fopen("C:\\Users\\rclay\\Desktop\\CPEN_412\\CPEN-412-As-3\\Programs\\M68kdebugmonitor.hex", "r")) == NULL)	{
 		fprintf(stderr, "Cannot Open S-Record File 'C:\\M68kV6.0 - 800by480\\M68kdebugmonitor.hex' for conversion to '.MIF' format\n") ;
 		fprintf(stderr, "Hit any key to exit.....") ;
 		_getch() ;
 		return 0 ;
 	}
 	
-	if((DestFilePtr = fopen("C:\\Users\\rclay\\Desktop\\CPEN_412\\CPEN-412-As-2\\M68kdebugmonitor.mif","w")) == NULL)	{
+	if((DestFilePtr = fopen("C:\\Users\\rclay\\Desktop\\CPEN_412\\CPEN-412-As-3\\Programs\\M68kdebugmonitor.mif","w")) == NULL)	{
 		fprintf(stderr, "Cannot Open/Create file 'C:\\M68kV6.0 - 800by480\\Programs\\M68kdebugmonitor.mif' to store output of file conversion\n") ;
 		fprintf(stderr, "Hit any key to exit.....") ;
 		_getch() ;
